@@ -1,4 +1,4 @@
-from bank_reco.main import kickoff
+from .bank_reco.main import kickoff
 
 from fastapi import FastAPI, UploadFile, File, Query
 from fastapi.responses import JSONResponse
