@@ -9,8 +9,8 @@ from collections import defaultdict
 from difflib import SequenceMatcher
 
 from crewai.flow import Flow, listen, start
-from crews.compare_statements.compare_statements import CompareStatements
-from utils import fetch_book_statements, extract_transactions , fetch_pdf_statements
+from .crews.compare_statements.compare_statements import CompareStatements
+from .utils import fetch_book_statements, extract_transactions , fetch_pdf_statements
 load_dotenv()
 
 # --- Data Models ---
