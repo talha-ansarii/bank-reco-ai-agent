@@ -1,0 +1,725 @@
+{
+    "date": "2024-06-01",
+    "description": "UPI/415377079812/Rent/anmol.mohan123-/Kotak Mahindra /SBI04bfd322afda45c2a3a4424222221c66",
+    "amount": 30240.0
+}
+{
+    "date": "2024-06-01",
+    "description": "NEFT-YESB41530523105-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 106994.43
+}
+{
+    "date": "2024-06-01",
+    "description": "INF/NEFT/036477575951/UTIB0CCH274/Salary         /Payroll",
+    "amount": -60000.0
+}
+{
+    "date": "2024-06-01",
+    "description": "INF/NEFT/036477581961/UTIB0CCH274/Salary         /Payroll",
+    "amount": -54000.0
+}
+{
+    "date": "2024-06-01",
+    "description": "NEFT-AXISCN0637205738-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 1188.64
+}
+{
+    "date": "2024-06-01",
+    "description": "MMT/IMPS/415328195601/MayuriGargav505/EAZYAPP TE/Ratnakar Bank",
+    "amount": 15680.0
+}
+{
+    "date": "2024-06-01",
+    "description": "MMT/IMPS/415326197441/KushankPatel302/EAZYAPP TE/Ratnakar Bank",
+    "amount": 26880.0
+}
+{
+    "date": "2024-06-01",
+    "description": "UPI/415360855362/UPI/ravi.5888-9@waa/Bank of Baroda/AXISWC0AE7DAA1E792B8364E630005C9286",
+    "amount": 15680.0
+}
+{
+    "date": "2024-06-01",
+    "description": "MMT/IMPS/415326231564/Tanmay501Rent/EAZYAPP TE/Ratnakar Bank",
+    "amount": 29120.0
+}
+{
+    "date": "2024-06-03",
+    "description": "NEFT-AXISCN0639232575-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 11983.16
+}
+{
+    "date": "2024-06-03",
+    "description": "NEFT-YESB41551814458-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 214596.83
+}
+{
+    "date": "2024-06-03",
+    "description": "NEFT-000379293172-LYRA NETWORK PVT LTD-REMARKS FROM DEBIT-409000855155-RATN0000999",
+    "amount": 24888.19
+}
+{
+    "date": "2024-06-03",
+    "description": "CMS/001455236189/BAJAJ_AUTO_CD__SME000004466341",
+    "amount": -38870.0
+}
+{
+    "date": "2024-06-03",
+    "description": "MMT/IMPS/415512249735/RazorpayXAxis/UTIB0CCH274",
+    "amount": -50000.0
+}
+{
+    "date": "2024-06-03",
+    "description": "MMT/IMPS/415528158936/Janani201Securi/EAZYAPP TE/Ratnakar Bank",
+    "amount": 23620.0
+}
+{
+    "date": "2024-06-03",
+    "description": "CMS/001455161867/BAJAJ_AUTO_CD__SME000004466341",
+    "amount": -76393.0
+}
+{
+    "date": "2024-06-03",
+    "description": "NEFT-CITIN24477316601-AIRBNB PAYMENTS INDIA P LTD-HOST-0MS1SA7NFHMMRKKLX0B0AQUC6UE-0712844019-CITI0",
+    "amount": 13946.42
+}
+{
+    "date": "2024-06-03",
+    "description": "MMT/IMPS/415504125030/ArnavAgrawal401/RZPXPRIVAT/Axis Bank",
+    "amount": 28000.0
+}
+{
+    "date": "2024-06-03",
+    "description": "112005002094:Int.Coll:02-05-2024 to 02-06-2024",
+    "amount": -5742.0
+}
+{
+    "date": "2024-06-03",
+    "description": "MMT/IMPS/415527085858/TusharAgarwal50/EAZYAPP TE/Ratnakar Bank",
+    "amount": 15680.0
+}
+{
+    "date": "2024-06-04",
+    "description": "MMT/IMPS/415627112605/UpamaRay304Rent/EAZYAPP TE/Ratnakar Bank",
+    "amount": 26880.0
+}
+{
+    "date": "2024-06-04",
+    "description": "MCD REF AMAZON PAY 240531",
+    "amount": 11932.0
+}
+{
+    "date": "2024-06-04",
+    "description": "NEFT-YESB41562500320-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 190374.36
+}
+{
+    "date": "2024-06-04",
+    "description": "MMT/IMPS/415625067369/VishnuRaoLeadAd/EAZYAPP TE/Ratnakar Bank",
+    "amount": 5000.0
+}
+{
+    "date": "2024-06-04",
+    "description": "NEFT-N156243073935632-MONILA MAILALA-RENT-50100671108538-HDFC0000001",
+    "amount": 32480.0
+}
+{
+    "date": "2024-06-04",
+    "description": "MMT/IMPS/415612023362/Salary/Payroll   /UTIB0CCH274",
+    "amount": -100.0
+}
+{
+    "date": "2024-06-04",
+    "description": "MMT/IMPS/415612992102/Rent/Payroll   /UTIB0CCH274",
+    "amount": -31000.0
+}
+{
+    "date": "2024-06-04",
+    "description": "INF/NEFT/036502662811/UTIB0CCH274/Salary         /Payroll",
+    "amount": -317000.0
+}
+{
+    "date": "2024-06-04",
+    "description": "MMT/IMPS/415625188266/RENTORSECURITYD/BSWETHADUT/Axis Bank",
+    "amount": 35000.0
+}
+{
+    "date": "2024-06-05",
+    "description": "UPI/452398748815/UPI/harshithavanama/Karur Vysya Ban/AXI741849c6dc5f41419f52bededeee2618",
+    "amount": 15680.0
+}
+{
+    "date": "2024-06-05",
+    "description": "MMT/IMPS/415726020491/PriyanshRajwar2/EAZYAPP TE/Ratnakar Bank",
+    "amount": 15680.0
+}
+{
+    "date": "2024-06-05",
+    "description": "MMT/IMPS/415728023034/AmanLeadAdvance/EAZYAPP TE/Ratnakar Bank",
+    "amount": 5000.0
+}
+{
+    "date": "2024-06-05",
+    "description": "ACH/CTRAZORPAY/ICIC0000000015573604/GROMORFINAOIok5iDXumqIpg",
+    "amount": -9168.0
+}
+{
+    "date": "2024-06-05",
+    "description": "ACH/CTRAZORPAY/ICIC0000000015573604/GROMORFINAOIok4Q3cQiUkwU",
+    "amount": -9168.0
+}
+{
+    "date": "2024-06-05",
+    "description": "NEFT-000379634102-LYRA NETWORK PVT LTD-REMARKS FROM DEBIT-409000855155-RATN0000999",
+    "amount": 15693.29
+}
+{
+    "date": "2024-06-05",
+    "description": "NEFT-YESB41573239664-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 755069.19
+}
+{
+    "date": "2024-06-05",
+    "description": "MMT/IMPS/415725110505/Customer7595880/EAZYAPP TE/Ratnakar Bank",
+    "amount": 10000.0
+}
+{
+    "date": "2024-06-05",
+    "description": "NEFT-AXISCN0641386381-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 9865.9
+}
+{
+    "date": "2024-06-06",
+    "description": "UPI/415845561601/UPI/santodhar@oksbi/State Bank Of I/SBIc87fcc70d588494a81240e2aff700351",
+    "amount": 15680.0
+}
+{
+    "date": "2024-06-06",
+    "description": "INF/NEFT/036533459081/UTIB0CCH274/RazorpayXAxis",
+    "amount": -50000.0
+}
+{
+    "date": "2024-06-06",
+    "description": "MMT/IMPS/415825061925/JiaLeadAdvance/EAZYAPP TE/Ratnakar Bank",
+    "amount": 5000.0
+}
+{
+    "date": "2024-06-06",
+    "description": "MMT/IMPS/415810468124/IMPS transactio/LEARNEON E/HDFC Bank",
+    "amount": 24480.0
+}
+{
+    "date": "2024-06-06",
+    "description": "NEFT-YESB41583948379-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 378240.87
+}
+{
+    "date": "2024-06-07",
+    "description": "MMT/IMPS/415928036219/AvivaKohlonLead/EAZYAPP TE/Ratnakar Bank",
+    "amount": 5000.0
+}
+{
+    "date": "2024-06-07",
+    "description": "INF/NEFT/036543135521/UTIB0CCH274/RazorpayXAxis",
+    "amount": -50000.0
+}
+{
+    "date": "2024-06-07",
+    "description": "MMT/IMPS/415912387344/Housingcom Acc Validation/Razorpay   to THRIVESCAP",
+    "amount": 1.0
+}
+{
+    "date": "2024-06-07",
+    "description": "NEFT-YESB41594672447-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 457487.83
+}
+{
+    "date": "2024-06-07",
+    "description": "MMT/IMPS/415927103181/Customer7715007/EAZYAPP TE/Ratnakar Bank",
+    "amount": 5000.0
+}
+{
+    "date": "2024-06-07",
+    "description": "MMT/IMPS/415926135673/VishnuRao105Sec/EAZYAPP TE/Ratnakar Bank",
+    "amount": 10680.0
+}
+{
+    "date": "2024-06-08",
+    "description": "INF/NEFT/036565629951/UTIB0CCH274/RazorpayXAxis",
+    "amount": -50000.0
+}
+{
+    "date": "2024-06-08",
+    "description": "INF/NEFT/036558701741/UTIB0CCH274/Payroll",
+    "amount": -60000.0
+}
+{
+    "date": "2024-06-08",
+    "description": "NEFT-N160243084273038-INSTAMOJO TECHNOLOGIES PVT LTD-THRIVESCAPE-50200011441915-HDFC0000240",
+    "amount": 1265.0
+}
+{
+    "date": "2024-06-08",
+    "description": "MMT/IMPS/416028257792/DevSinha106Rent/EAZYAPP TE/Ratnakar Bank",
+    "amount": 15680.0
+}
+{
+    "date": "2024-06-10",
+    "description": "INF/NEFT/036580174431/UTIB0CCH274/Payroll",
+    "amount": -41000.0
+}
+{
+    "date": "2024-06-10",
+    "description": "NEFT-AXISCN0646324093-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 9787.6
+}
+{
+    "date": "2024-06-10",
+    "description": "MMT/IMPS/416228170691/Aman502Security/EAZYAPP TE/Ratnakar Bank",
+    "amount": 23000.0
+}
+{
+    "date": "2024-06-10",
+    "description": "INF/NEFT/036575787671/UTIB0CCH274/RazorpayXAxis",
+    "amount": -44000.0
+}
+{
+    "date": "2024-06-10",
+    "description": "INF/INFT/036588311471/Rent           /SYEDDLF",
+    "amount": -79065.0
+}
+{
+    "date": "2024-06-10",
+    "description": "INF/INFT/036588315031/Rent           /DLFLANDLORD3",
+    "amount": -79065.0
+}
+{
+    "date": "2024-06-10",
+    "description": "INF/NEFT/036588318431/SBIN0001879/Rent           /DLFlandlordAtiy",
+    "amount": -79065.0
+}
+{
+    "date": "2024-06-10",
+    "description": "NEFT-000380545697-LYRA NETWORK PVT LTD-REMARKS FROM DEBIT-409000855155-RATN0000999",
+    "amount": 48317.56
+}
+{
+    "date": "2024-06-10",
+    "description": "INF/INFT/036588305961/Rent           /T1landlord",
+    "amount": -300000.0
+}
+{
+    "date": "2024-06-10",
+    "description": "NEFT-YESB41626432486-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 1001790.46
+}
+{
+    "date": "2024-06-10",
+    "description": "MMT/IMPS/416227062765/RajkamalLeadAdv/EAZYAPP TE/Ratnakar Bank",
+    "amount": 5000.0
+}
+{
+    "date": "2024-06-10",
+    "description": "MIN/YOURSTORY M/202406101228/298412/",
+    "amount": -499.0
+}
+{
+    "date": "2024-06-10",
+    "description": "BIL/ONL/000853846029/Atria Conv",
+    "amount": -28312.92
+}
+{
+    "date": "2024-06-10",
+    "description": "INF/NEFT/036574841401/UTIB0CCH274/RazorpayXAxis",
+    "amount": -75000.0
+}
+{
+    "date": "2024-06-10",
+    "description": "MMT/IMPS/416227017368/AvivaKohlon403S/EAZYAPP TE/Ratnakar Bank",
+    "amount": 23000.0
+}
+{
+    "date": "2024-06-10",
+    "description": "UPI/452741451263/pending rent/prithuhazarika@/ICICI Bank/ICI7c1da336b301407584f1b039bdda2274",
+    "amount": 35018.0
+}
+{
+    "date": "2024-06-10",
+    "description": "UPI/452717171944/NA/9315550653@payt/HDFC BANK LTD/PTMc13786cfab014028a64fef99d8b7c3c0",
+    "amount": 42320.5
+}
+{
+    "date": "2024-06-10",
+    "description": "UPI/416135796333/UPI/apurv.kp27@okhd/HDFC BANK LTD/HDFc189a5a680914f9ba50dcb7434b56a1d",
+    "amount": 28310.0
+}
+{
+    "date": "2024-06-10",
+    "description": "MMT/IMPS/416227111743/UnniLeadAdvance/EAZYAPP TE/Ratnakar Bank",
+    "amount": 10000.0
+}
+{
+    "date": "2024-06-11",
+    "description": "CAM/10441SRY/CASH DEP-Other/11-06-24/4782",
+    "amount": 1000.0
+}
+{
+    "date": "2024-06-11",
+    "description": "NEFT-YESB41637123398-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 30646.41
+}
+{
+    "date": "2024-06-11",
+    "description": "CAM/10441SRY/CASH DEP-Other/11-06-24/4780",
+    "amount": 500.0
+}
+{
+    "date": "2024-06-11",
+    "description": "INF/NEFT/036599691281/UTIB0CCH274/Salary         /Payroll",
+    "amount": -174000.0
+}
+{
+    "date": "2024-06-11",
+    "description": "MMT/IMPS/416325151214/AvivaKohlon403R/EAZYAPP TE/Ratnakar Bank",
+    "amount": 20533.0
+}
+{
+    "date": "2024-06-11",
+    "description": "NEFT-AXISCN0647445657-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 9787.6
+}
+{
+    "date": "2024-06-11",
+    "description": "CAM/10441SRY/CASH DEP-Other/11-06-24/4778",
+    "amount": 37700.0
+}
+{
+    "date": "2024-06-11",
+    "description": "INF/NEFT/036593247781/HDFC0000218/Rent           /HHlandlord1",
+    "amount": -124279.0
+}
+{
+    "date": "2024-06-11",
+    "description": "INF/NEFT/036593315561/SBIN0021110/Rent           /Gsrinivas",
+    "amount": -76091.0
+}
+{
+    "date": "2024-06-11",
+    "description": "INF/NEFT/036593257111/HDFC0000218/Rent           /HHlandlord2",
+    "amount": -124279.0
+}
+{
+    "date": "2024-06-11",
+    "description": "INF/NEFT/036593267211/HDFC0000218/Rent           /HHlandlord3",
+    "amount": -124279.0
+}
+{
+    "date": "2024-06-11",
+    "description": "INF/NEFT/036593331151/SBIN0021216/Rent           /Gayathri",
+    "amount": -76091.0
+}
+{
+    "date": "2024-06-11",
+    "description": "INF/NEFT/036593302181/SBIN0021216/Rent           /Aakanksha",
+    "amount": -76091.0
+}
+{
+    "date": "2024-06-11",
+    "description": "INF/NEFT/036593283941/HDFC0000218/Rent           /HHlandlord4",
+    "amount": -124279.0
+}
+{
+    "date": "2024-06-12",
+    "description": "MMT/IMPS/416426084084/AkankshaPrasadL/EAZYAPP TE/Ratnakar Bank",
+    "amount": 5000.0
+}
+{
+    "date": "2024-06-12",
+    "description": "NEFT-YESB41647898871-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 104487.79
+}
+{
+    "date": "2024-06-12",
+    "description": "INF/NEFT/036616072351/IOBA0000572/Rent           /Deepthitr",
+    "amount": -396000.0
+}
+{
+    "date": "2024-06-13",
+    "description": "UPI/453148515315/UPI/kirankuchana28@/ICICI Bank/ICI62f016fca6814c418ec8a2b1b10798ab",
+    "amount": 15680.0
+}
+{
+    "date": "2024-06-13",
+    "description": "UPI/416539449147/Payment from Ph/9544529723@ybl/Federal Bank/YBLf26418aa40a04cc59d23a25835633c2b",
+    "amount": 33600.0
+}
+{
+    "date": "2024-06-13",
+    "description": "NEFT-YESB41658567091-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 220003.19
+}
+{
+    "date": "2024-06-14",
+    "description": "UPI/416660406229/Payment from Ph/nirosha20951@ax/Axis Bank Ltd./AXL2a7c5382fe564e24be33cbccaa55cd03",
+    "amount": 32032.0
+}
+{
+    "date": "2024-06-14",
+    "description": "GIB/002022562441/DTAX      /24061400441948ICIC",
+    "amount": -90000.0
+}
+{
+    "date": "2024-06-14",
+    "description": "MMT/IMPS/416625113673/VishnuRaoV105Re/EAZYAPP TE/Ratnakar Bank",
+    "amount": 14112.0
+}
+{
+    "date": "2024-06-14",
+    "description": "MMT/IMPS/416628116773/GauriKrishna404/EAZYAPP TE/Ratnakar Bank",
+    "amount": 18000.0
+}
+{
+    "date": "2024-06-14",
+    "description": "INF/NEFT/036636826181/UTIB0CCH274/RazorpayXAxis",
+    "amount": -50000.0
+}
+{
+    "date": "2024-06-14",
+    "description": "MMT/IMPS/416627090954/SuchiLeadAdvanc/EAZYAPP TE/Ratnakar Bank",
+    "amount": 5000.0
+}
+{
+    "date": "2024-06-14",
+    "description": "NEFT-YESB41669231068-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 60533.32
+}
+{
+    "date": "2024-06-14",
+    "description": "UPI/416615989020/UPI/sunnyvirgo11@ok/Union Bank of I/ICI03efead614344a6ab3efb49361200e97",
+    "amount": 15680.0
+}
+{
+    "date": "2024-06-14",
+    "description": "NEFT-AXISCN0650761336-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 9787.6
+}
+{
+    "date": "2024-06-15",
+    "description": "NEFT-YESB41679815504-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 28056.1
+}
+{
+    "date": "2024-06-15",
+    "description": "NEFT-AXISCN0651777429-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 15254.62
+}
+{
+    "date": "2024-06-15",
+    "description": "MMT/IMPS/416728052355/ShivamLeadAdvan/EAZYAPP TE/Ratnakar Bank",
+    "amount": 5000.0
+}
+{
+    "date": "2024-06-15",
+    "description": "MMT/IMPS/416725057709/RajkamalSingh20/EAZYAPP TE/Ratnakar Bank",
+    "amount": 10680.0
+}
+{
+    "date": "2024-06-16",
+    "description": "MMT/IMPS/416826095180/SuchismitaNayak/EAZYAPP TE/Ratnakar Bank",
+    "amount": 19043.0
+}
+{
+    "date": "2024-06-17",
+    "description": "BIL/ONL/000856798563/DREAMPLUG",
+    "amount": -209495.06
+}
+{
+    "date": "2024-06-17",
+    "description": "INF/NEFT/036659623941/UBIN0801925/GEETHAT0",
+    "amount": -210600.0
+}
+{
+    "date": "2024-06-17",
+    "description": "INF/NEFT/036659688861/UTIB0CCH274/RazorpayXAxis",
+    "amount": -50000.0
+}
+{
+    "date": "2024-06-17",
+    "description": "MMT/IMPS/416919018223/thriveabhi/RAZORPAYXA/UTIB0CCH274",
+    "amount": -50000.0
+}
+{
+    "date": "2024-06-17",
+    "description": "MMT/IMPS/416927133275/AkankshaPrasad3/EAZYAPP TE/Ratnakar Bank",
+    "amount": 18520.0
+}
+{
+    "date": "2024-06-17",
+    "description": "MMT/IMPS/416926140367/ShivamBansal501/EAZYAPP TE/Ratnakar Bank",
+    "amount": 39053.0
+}
+{
+    "date": "2024-06-18",
+    "description": "NEFT-AXISCN0654093857-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 9905.6
+}
+{
+    "date": "2024-06-18",
+    "description": "NEFT-YESB41701352850-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 147205.6
+}
+{
+    "date": "2024-06-19",
+    "description": "BIL/ONL/000857505302/DREAMPLUG",
+    "amount": -99951.0
+}
+{
+    "date": "2024-06-19",
+    "description": "NEFT-AXISCN0655171935-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 9905.6
+}
+{
+    "date": "2024-06-20",
+    "description": "MIN/IND Souther/202406200728/238922/",
+    "amount": -10076.52
+}
+{
+    "date": "2024-06-20",
+    "description": "MIN/IND Souther/202406200730/239150/",
+    "amount": -118681.56
+}
+{
+    "date": "2024-06-20",
+    "description": "GIB/002022922267/GST       /24063600120598",
+    "amount": -373311.0
+}
+{
+    "date": "2024-06-20",
+    "description": "INF/NEFT/036686248541/UBIN0801925/Rent           /NarenderT0",
+    "amount": -194400.0
+}
+{
+    "date": "2024-06-20",
+    "description": "INF/NEFT/036687171881/UTIB0CCH274/thriveabhi     /PAYROLL",
+    "amount": -95000.0
+}
+{
+    "date": "2024-06-20",
+    "description": "UPI/417221508244/Payment from Ph/8099299999@axl/Karur Vysya Ban/AXL06f06a7be6574d868317c30862e3f129",
+    "amount": 27100.0
+}
+{
+    "date": "2024-06-20",
+    "description": "NEFT-YESB41722986696-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 116060.67
+}
+{
+    "date": "2024-06-21",
+    "description": "INF/NEFT/036698331521/UTIB0CCH274/thriveabhi     /RAZORPAYXAXIS",
+    "amount": -50000.0
+}
+{
+    "date": "2024-06-21",
+    "description": "NEFT-AXISCN0656932763-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 14858.4
+}
+{
+    "date": "2024-06-22",
+    "description": "MMT/IMPS/417421447355/Salary/Payroll   /UTIB0CCH274",
+    "amount": -15000.0
+}
+{
+    "date": "2024-06-24",
+    "description": "NEFT-YESB41765321395-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 17319.3
+}
+{
+    "date": "2024-06-24",
+    "description": "NEFT-AXISCN0659397210-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 14858.4
+}
+{
+    "date": "2024-06-24",
+    "description": "INF/NEFT/036715966761/UTIB0CCH274/Payroll",
+    "amount": -66000.0
+}
+{
+    "date": "2024-06-24",
+    "description": "NEFT-CITIN24485021314-AIRBNB PAYMENTS INDIA P LTD-HOST-0MS1SLIIIGQIV4CIXYGZCTSUUX7-0712844019-CITI0",
+    "amount": 6908.76
+}
+{
+    "date": "2024-06-25",
+    "description": "INF/NEFT/036727875611/UTIB0CCH274/RazorpayXAxis",
+    "amount": -100000.0
+}
+{
+    "date": "2024-06-25",
+    "description": "GIB/002023187652/DTAX      /24062500004628ICIC",
+    "amount": -389070.0
+}
+{
+    "date": "2024-06-25",
+    "description": "BIL/ONL/000859889092/DREAMPLUG",
+    "amount": -5354.24
+}
+{
+    "date": "2024-06-25",
+    "description": "NEFT-AXISCN0660436978-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 9787.6
+}
+{
+    "date": "2024-06-25",
+    "description": "UPI/417772099578/Payment from Ph/deekshavanguru@/Standard Charte/AXL54e7787457274a1d98c29ff0434825db",
+    "amount": 30240.0
+}
+{
+    "date": "2024-06-26",
+    "description": "NEFT-YESB41786771222-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 19765.92
+}
+{
+    "date": "2024-06-27",
+    "description": "NEFT-AXISCN0662585856-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 4952.8
+}
+{
+    "date": "2024-06-27",
+    "description": "INF/NEFT/036750187281/UTIB0CCH274/thriveabhi     /RAZORPAYXAXIS",
+    "amount": -50000.0
+}
+{
+    "date": "2024-06-27",
+    "description": "NEFT-YESB41797391134-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 73919.3
+}
+{
+    "date": "2024-06-28",
+    "description": "NEFT-YESB41807989700-TYCHE PAYMENT SOLUTIONS PVT LTD NOD-YESB0000001-068961100000012-YESB0000001",
+    "amount": 1565.45
+}
+{
+    "date": "2024-06-28",
+    "description": "NEFT-CITIN24490123408-AIRBNB PAYMENTS INDIA P LTD-HOST-0MS1SG9V23ZB5IEIMEJZVGWUADZ-0712844019-CITI0",
+    "amount": 13946.42
+}
+{
+    "date": "2024-06-29",
+    "description": "INF/INFT/036775672591/MOJO Payout 814/TYCHE PAYMENT S",
+    "amount": 15818.73
+}
+{
+    "date": "2024-06-29",
+    "description": "NEFT-AXISCN0664455454-RAZORPAY SOFTWARE PRIVATE LIMITED --RAZORPAY SOFTWARE PVT LTD FUND-9170200412",
+    "amount": 9882.0
+}
+{
+    "date": "2024-06-30",
+    "description": "UPI/418204725167/UPI/anmol.mohan123-/Kotak Mahindra /SBIba5c9a9258d44669901b2b973beb7442",
+    "amount": 31098.0
+}
+{
+    "date": "2024-06-30",
+    "description": "MMT/IMPS/418226189584/RajkamalSingh20/EAZYAPP TE/Ratnakar Bank",
+    "amount": 15680.0
+}

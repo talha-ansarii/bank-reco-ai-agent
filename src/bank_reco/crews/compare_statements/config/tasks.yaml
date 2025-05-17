@@ -1,0 +1,14 @@
+batch_match_task:
+  description: >
+    Given a batch of transaction pairs to compare:
+    {transactions}
+
+    For each pair, compare the bank_transaction_description and book_transaction_description.
+    Analyze only their descriptions, ignoring amounts and dates.
+    For each pair, determine if they likely refer to the same transaction.
+
+    Return a list of matches, each with the transaction ID and whether it matched.
+  expected_output: >
+    Return a BatchOutput object with a "matches" list containing SingleOutput objects.
+    Each SingleOutput should have "id" (from the input) and "matched" (True/False).
+  agent: matcher

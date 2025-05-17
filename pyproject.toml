@@ -1,0 +1,21 @@
+[project]
+name = "bank_reco"
+version = "0.1.0"
+description = "bank_reco using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.119.0,<1.0.0",
+]
+
+[project.scripts]
+kickoff = "bank_reco.main:kickoff"
+run_crew = "bank_reco.main:kickoff"
+plot = "bank_reco.main:plot"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"
