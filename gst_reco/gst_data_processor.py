@@ -593,8 +593,8 @@ class GSTReconciliationEngine:
             "supplier_gstin": gstr_row.get('supplier_gstin', ''),
             "invoice_no_gstr": gstr_row.get('invoice_no', ''),
             "invoice_no_books": books_row.get('invoice_no', ''),
-            "invoice_date_gstr": gstr_row.get('invoice_date'),
-            "invoice_date_books": books_row.get('invoice_date'),
+            "invoice_date_gstr": self._format_date_for_json(gstr_row.get('invoice_date')),
+            "invoice_date_books": self._format_date_for_json(books_row.get('invoice_date')),
             "taxable_value_gstr": float(gstr_row.get('taxable_value', 0)),
             "taxable_value_books": float(books_row.get('taxable_value', 0)),
             "gst_amount_books": float(books_row.get('total_gst', 0)),
@@ -608,12 +608,31 @@ class GSTReconciliationEngine:
         return {
             "supplier_gstin": row.get('supplier_gstin', ''),
             "invoice_no": row.get('invoice_no', ''),
-            "invoice_date": row.get('invoice_date'),
+            "invoice_date": self._format_date_for_json(row.get('invoice_date')),
             "taxable_value": float(row.get('taxable_value', 0)),
             "gst_amount": float(row.get('total_gst', 0)) if 'total_gst' in row else 0,
             "match_status": status,
             "source": row.get('source', '')
         }
+
+    def _format_date_for_json(self, date_value) -> str:
+        """Format date for JSON serialization"""
+        if pd.isna(date_value) or date_value is None:
+            return ""
+
+        if isinstance(date_value, pd.Timestamp):
+            return date_value.strftime('%Y-%m-%d')
+        elif isinstance(date_value, datetime):
+            return date_value.strftime('%Y-%m-%d')
+        else:
+            # Try to convert to datetime if it's a string
+            try:
+                dt = pd.to_datetime(date_value)
+                if pd.isna(dt):
+                    return ""
+                return dt.strftime('%Y-%m-%d')
+            except:
+                return str(date_value)
 
     def _generate_summary(self, results: Dict) -> Dict:
         """Generate reconciliation summary"""
