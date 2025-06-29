@@ -1,0 +1,64 @@
+process_gst_data:
+  description: >
+    Process and normalize GST data from GSTR-2A/2B JSON and Books of Accounts Excel file.
+
+    Tasks:
+    1. Parse GSTR-2A/2B JSON data and extract relevant fields
+    2. Read and process Books of Accounts Excel file
+    3. Normalize data formats (dates, invoice numbers, amounts)
+    4. Clean and standardize GSTIN formats
+    5. Validate data integrity and identify any issues
+
+    Expected Output:
+    A detailed summary of processed data including:
+    - Total records processed from each source
+    - Data quality issues identified
+    - Standardized data format confirmation
+  expected_output: >
+    Processed data summary with record counts and quality assessment
+  agent: gst_data_analyst
+
+perform_reconciliation:
+  description: >
+    Perform comprehensive reconciliation between GSTR data and Books of Accounts.
+
+    Matching Criteria:
+    - Supplier GSTIN: Exact match (40% weight)
+    - Invoice Number: Fuzzy match with 85% threshold (30% weight)  
+    - Invoice Date: Within 2 days tolerance (20% weight)
+    - Taxable Amount: Within ₹5 tolerance (10% weight)
+
+    Categorization:
+    1. MATCHED: Perfect matches meeting all criteria
+    2. PARTIAL_MATCH: Matches with some discrepancies requiring review
+    3. GSTR_ONLY: Records present in GSTR but missing from Books
+    4. BOOKS_ONLY: Records present in Books but missing from GSTR
+
+    Expected Output:
+    Detailed reconciliation results with match scores and categorization
+  expected_output: >
+    Categorized reconciliation results with match scores and detailed analysis
+  agent: reconciliation_specialist
+
+generate_reports:
+  description: >
+    Generate comprehensive reconciliation reports for different stakeholder needs.
+
+    Reports to Generate:
+    1. Detailed Reconciliation Report: Complete match details with scores
+    2. Summary Report: High-level statistics and key metrics
+    3. Unmatched GSTR Records: Items in GSTR-2A/2B not found in Books
+    4. Unmatched Books Records: Items in Books not found in GSTR-2A/2B
+    5. Partial Matches Report: Items requiring manual verification
+
+    Include:
+    - Actionable insights and recommendations
+    - High-value discrepancy highlights
+    - Compliance risk assessment
+    - Next steps for resolution
+
+    Expected Output:
+    Complete set of reconciliation reports with executive summary
+  expected_output: >
+    Comprehensive reconciliation reports with insights and recommendations
+  agent: report_generator
