@@ -88,8 +88,8 @@ def gst_reconcile(
     company_id: str = Query(...),
     sheet_name: str = Query(default="Book ITC"),
     fuzzy_threshold: int = Query(default=85),
-    date_tolerance: int = Query(default=2),
-    amount_tolerance: float = Query(default=5.0),
+    date_tolerance: int = Query(default=0),
+    amount_tolerance: float = Query(default=0.0),
 ):
     """
     GST Reconciliation API endpoint - Supports both GSTR-2A and GSTR-2B formats
