@@ -12,7 +12,7 @@ def kickoff_gst_reconciliation(
     gstr_json: Dict,
     books_file_path: str,
     company_id: str = None,
-    sheet_name: str = "Book ITC",
+    sheet_name: str = "purchase_invoice_table",
     fuzzy_threshold: int = 85,
     date_tolerance: int = 2,
     amount_tolerance: float = 5.0
@@ -24,7 +24,7 @@ def kickoff_gst_reconciliation(
         gstr_json: GSTR-2A/2B JSON data
         books_file_path: Path to Books Excel file
         company_id: Company identifier
-        sheet_name: Excel sheet name containing books data
+        sheet_name: Excel sheet name containing books data (default: "purchase_invoice_table")
         fuzzy_threshold: Fuzzy matching threshold for invoice numbers
         date_tolerance: Date tolerance in days
         amount_tolerance: Amount tolerance in rupees

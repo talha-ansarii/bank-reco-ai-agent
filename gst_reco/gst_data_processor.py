@@ -112,7 +112,7 @@ class GSTDataProcessor:
             logger.error(f"Error processing GSTR data: {str(e)}")
             raise
 
-    def process_books_data(self, file_path: str, sheet_name: str = "Book ITC") -> pd.DataFrame:
+    def process_books_data(self, file_path: str, sheet_name: str = "purchase_invoice_table") -> pd.DataFrame:
         """
         Process Books of Accounts Excel data into a normalized DataFrame
 
@@ -143,65 +143,70 @@ class GSTDataProcessor:
             # Print original columns for debugging
             logger.warning(f"Original Excel columns: {list(df.columns)}")
 
-            # Create column mapping based on the actual Excel structure
-            # Map the exact column names from the Excel screenshot
+            # Create column mapping based on the purchase_invoice_table format
+            # Map the exact column names from the provided sheet format
             column_mapping = {
-                # GSTIN column - handle various formats
-                'GSTIN': 'supplier_gstin',
-                'gstin': 'supplier_gstin',
-                'Supplier GSTIN': 'supplier_gstin',
-                'supplier_gstin': 'supplier_gstin',
-                'Vendor GSTIN': 'supplier_gstin',
-                'Party GSTIN': 'supplier_gstin',
-
-                # Name column - handle various formats
+                # Supplier Name - exact match for new format
+                'supplier_name': 'supplier_name',
+                'Supplier Name': 'supplier_name',
                 'Name': 'supplier_name',
                 'name': 'supplier_name',
                 'Vendor Name': 'supplier_name',
                 'vendor_name': 'supplier_name',
                 'Party Name': 'supplier_name',
-                'Supplier Name': 'supplier_name',
 
-                # Invoice Type
-                'Invoice Type': 'invoice_type',
-                'invoice_type': 'invoice_type',
-                'Transaction Type': 'invoice_type',
-                'Voucher Type': 'invoice_type',
+                # GSTIN column - exact match for new format
+                'supplier_gstin': 'supplier_gstin',
+                'GSTIN': 'supplier_gstin',
+                'gstin': 'supplier_gstin',
+                'Supplier GSTIN': 'supplier_gstin',
+                'Vendor GSTIN': 'supplier_gstin',
+                'Party GSTIN': 'supplier_gstin',
 
-                # Invoice Number - mapping voucher ref no to invoice no
+                # Invoice Number - exact match for new format
+                'invoice_number': 'invoice_no',
+                'Invoice Number': 'invoice_no',
+                'invoice_no': 'invoice_no',
+                'Invoice No': 'invoice_no',
+                'Invoice No.': 'invoice_no',
+                'Bill No': 'invoice_no',
+                'Bill Number': 'invoice_no',
+                'Reference No': 'invoice_no',
+                'Ref No': 'invoice_no',
+                # Legacy voucher mappings
                 'Voucher Ref. No.': 'invoice_no',
                 'Voucher Ref No': 'invoice_no',
                 'Voucher Ref. No': 'invoice_no',
                 'voucher_ref._no.': 'invoice_no',
                 'voucher_ref_no': 'invoice_no',
-                'Invoice No': 'invoice_no',
-                'Invoice No.': 'invoice_no',
-                'invoice_no': 'invoice_no',
-                'Invoice Number': 'invoice_no',
-                'invoice_number': 'invoice_no',
-                'Bill No': 'invoice_no',
-                'Bill Number': 'invoice_no',
-                'Reference No': 'invoice_no',
-                'Ref No': 'invoice_no',
 
-                # Voucher No
-                'Voucher No': 'voucher_no',
-                'Voucher No.': 'voucher_no',
-                'voucher_no': 'voucher_no',
-                'Voucher Number': 'voucher_no',
-
-                # Invoice Date - mapping voucher ref date to invoice date
+                # Invoice Date - handle epoch format
+                'invoice_date_epoch': 'invoice_date_epoch',
+                'Invoice Date Epoch': 'invoice_date_epoch',
+                'invoice_date': 'invoice_date',
+                'Invoice Date': 'invoice_date',
+                'Bill Date': 'invoice_date',
+                'Transaction Date': 'invoice_date',
+                'Date': 'invoice_date',
+                # Legacy voucher date mappings
                 'Voucher Ref. Date': 'invoice_date',
                 'Voucher Ref Date': 'invoice_date',
                 'voucher_ref._date': 'invoice_date',
                 'voucher_ref_date': 'invoice_date',
-                'Invoice Date': 'invoice_date',
-                'invoice_date': 'invoice_date',
-                'Bill Date': 'invoice_date',
-                'Transaction Date': 'invoice_date',
-                'Date': 'invoice_date',
 
-                # Taxable Value - handle various formats
+                # IRN (Invoice Reference Number) - new field
+                'irn': 'irn',
+                'IRN': 'irn',
+                'Invoice Reference Number': 'irn',
+
+                # Place of Supply - new field
+                'place_of_supply': 'place_of_supply',
+                'Place of Supply': 'place_of_supply',
+                'Place Of Supply': 'place_of_supply',
+
+                # Sub Total (Taxable Value) - exact match for new format
+                'sub_total': 'taxable_value',
+                'Sub Total': 'taxable_value',
                 'Taxable Value': 'taxable_value',
                 'taxable_value': 'taxable_value',
                 'Taxable Amount': 'taxable_value',
@@ -209,28 +214,56 @@ class GSTDataProcessor:
                 'Base Amount': 'taxable_value',
                 'Amount': 'taxable_value',
 
-                # GST Components - handle various formats
-                'IGST': 'igst',
-                'igst': 'igst',
-                'IGST Amount': 'igst',
-                'Integrated GST': 'igst',
+                # GST Rate - new field
+                'gst_rate': 'gst_rate',
+                'GST Rate': 'gst_rate',
+                'Tax Rate': 'gst_rate',
 
-                'CGST': 'cgst',
+                # GST Components - exact match for new format
                 'cgst': 'cgst',
+                'CGST': 'cgst',
                 'CGST Amount': 'cgst',
                 'Central GST': 'cgst',
 
-                'SGST': 'sgst',
                 'sgst': 'sgst',
+                'SGST': 'sgst',
                 'SGST Amount': 'sgst',
                 'State GST': 'sgst',
                 'UTGST': 'sgst',  # Union Territory GST maps to SGST
 
-                # Total GST
+                'igst': 'igst',
+                'IGST': 'igst',
+                'IGST Amount': 'igst',
+                'Integrated GST': 'igst',
+
+                # Cess - new field
+                'cess': 'cess',
+                'Cess': 'cess',
+                'CESS': 'cess',
+
+                # Total - exact match for new format
+                'total': 'total_amount',
+                'Total': 'total_amount',
+                'Total Amount': 'total_amount',
+                'Grand Total': 'total_amount',
+
+                # Total GST (calculated field)
                 'Total GST': 'total_gst',
                 'total_gst': 'total_gst',
                 'GST Amount': 'total_gst',
                 'Tax Amount': 'total_gst',
+
+                # Invoice Type
+                'Invoice Type': 'invoice_type',
+                'invoice_type': 'invoice_type',
+                'Transaction Type': 'invoice_type',
+                'Voucher Type': 'invoice_type',
+
+                # Voucher No
+                'Voucher No': 'voucher_no',
+                'Voucher No.': 'voucher_no',
+                'voucher_no': 'voucher_no',
+                'Voucher Number': 'voucher_no',
 
                 # Source/Description
                 'Source': 'source_description',
@@ -250,7 +283,10 @@ class GSTDataProcessor:
 
             # Ensure required columns exist
             required_columns = ['supplier_gstin',
-                                'invoice_no', 'invoice_date', 'taxable_value']
+                                'invoice_no', 'taxable_value']
+            # Check for either invoice_date or invoice_date_epoch
+            has_date_column = 'invoice_date' in df_renamed.columns or 'invoice_date_epoch' in df_renamed.columns
+            
             missing_columns = [
                 col for col in required_columns if col not in df_renamed.columns]
 
@@ -260,6 +296,9 @@ class GSTDataProcessor:
                 # Try to find alternative column names
                 available_cols = list(df_renamed.columns)
                 logger.info(f"Available columns: {available_cols}")
+
+            if not has_date_column:
+                logger.warning("No date column found (neither invoice_date nor invoice_date_epoch)")
 
             # Clean and normalize data
             if 'supplier_gstin' in df_renamed.columns:
@@ -275,12 +314,18 @@ class GSTDataProcessor:
                 df_renamed['invoice_no'] = df_renamed['invoice_no'].apply(
                     self._clean_invoice_no)
 
-            if 'invoice_date' in df_renamed.columns:
+            # Handle date processing - prioritize epoch format
+            if 'invoice_date_epoch' in df_renamed.columns:
+                # Convert epoch timestamp to datetime
+                df_renamed['invoice_date'] = pd.to_datetime(
+                    df_renamed['invoice_date_epoch'], unit='ms', errors='coerce')
+                logger.info("Converted epoch timestamps to datetime")
+            elif 'invoice_date' in df_renamed.columns:
                 df_renamed['invoice_date'] = pd.to_datetime(
                     df_renamed['invoice_date'], errors='coerce')
 
             # Handle GST amounts - convert to numeric
-            gst_columns = ['igst', 'cgst', 'sgst']
+            gst_columns = ['igst', 'cgst', 'sgst', 'cess']
             for col in gst_columns:
                 if col in df_renamed.columns:
                     # Replace dashes with 0 and convert to numeric
@@ -293,10 +338,28 @@ class GSTDataProcessor:
                 df_renamed['taxable_value'] = pd.to_numeric(
                     df_renamed['taxable_value'], errors='coerce').fillna(0)
 
+            # Handle total amount
+            if 'total_amount' in df_renamed.columns:
+                df_renamed['total_amount'] = pd.to_numeric(
+                    df_renamed['total_amount'], errors='coerce').fillna(0)
+
+            # Handle GST rate
+            if 'gst_rate' in df_renamed.columns:
+                df_renamed['gst_rate'] = pd.to_numeric(
+                    df_renamed['gst_rate'], errors='coerce').fillna(0)
+
+            # Handle place of supply
+            if 'place_of_supply' in df_renamed.columns:
+                df_renamed['place_of_supply'] = df_renamed['place_of_supply'].astype(str)
+
+            # Handle IRN
+            if 'irn' in df_renamed.columns:
+                df_renamed['irn'] = df_renamed['irn'].astype(str).str.strip()
+
             # Calculate total GST if not present
             if 'total_gst' not in df_renamed.columns:
                 available_gst_cols = [
-                    col for col in gst_columns if col in df_renamed.columns]
+                    col for col in ['igst', 'cgst', 'sgst'] if col in df_renamed.columns]
                 if available_gst_cols:
                     df_renamed['total_gst'] = df_renamed[available_gst_cols].sum(
                         axis=1)
@@ -308,11 +371,22 @@ class GSTDataProcessor:
 
             # Filter out rows with empty GSTIN or Invoice No
             initial_count = len(df_renamed)
-            df_renamed = df_renamed[
-                (df_renamed['supplier_gstin'].notna()) &
-                (df_renamed['supplier_gstin'] != '') &
-                (df_renamed['invoice_no'].notna()) &
+            filter_conditions = [
+                (df_renamed['supplier_gstin'].notna()),
+                (df_renamed['supplier_gstin'] != ''),
+                (df_renamed['invoice_no'].notna()),
                 (df_renamed['invoice_no'] != '')
+            ]
+            
+            # Add date filter if date column exists
+            if 'invoice_date' in df_renamed.columns:
+                filter_conditions.append(df_renamed['invoice_date'].notna())
+            
+            # Apply all filter conditions
+            df_renamed = df_renamed[
+                filter_conditions[0] & filter_conditions[1] & 
+                filter_conditions[2] & filter_conditions[3] &
+                (filter_conditions[4] if len(filter_conditions) > 4 else True)
             ]
             final_count = len(df_renamed)
 
@@ -373,10 +447,12 @@ class GSTDataProcessor:
             int: Row index containing headers (0-based)
         """
         try:
-            # Expected column keywords that should appear in headers
+            # Expected column keywords for the new purchase_invoice_table format
             expected_keywords = [
-                'gstin', 'name', 'invoice', 'voucher', 'date', 'taxable', 'value',
-                'igst', 'cgst', 'sgst', 'ref', 'no', 'type', 'source'
+                'supplier_name', 'supplier_gstin', 'invoice_number', 'invoice_date',
+                'irn', 'place_of_supply', 'sub_total', 'gst_rate', 'cgst', 'sgst', 
+                'igst', 'cess', 'total', 'gstin', 'name', 'invoice', 'voucher', 
+                'date', 'taxable', 'value', 'ref', 'no', 'type', 'source'
             ]
 
             best_header_row = 0
@@ -411,8 +487,9 @@ class GSTDataProcessor:
                                 score += 1
                                 break
 
-                    # Bonus points if we find key columns
-                    key_columns = ['gstin', 'invoice', 'voucher', 'taxable']
+                    # Bonus points if we find key columns from new format
+                    key_columns = ['supplier_gstin', 'invoice_number', 'sub_total', 
+                                   'gstin', 'invoice', 'voucher', 'taxable']
                     for col_name in column_names:
                         for key_col in key_columns:
                             if key_col in col_name:

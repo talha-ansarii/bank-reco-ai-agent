@@ -44,7 +44,7 @@ def health_check():
     }
 
 
-@app.post("/reconcile")
+@app.post("/bank-reconcile")
 def reconcile_statements(
     file: UploadFile = File(...),
     start_date: str = Query(...),
@@ -168,4 +168,4 @@ def gst_reconcile(
 
 if __name__ == "__main__":
     uvicorn.run("app:app", host="0.0.0.0", port=int(
-        os.getenv("PORT", 5000)), workers=1)
+        os.getenv("PORT", 5012)), workers=1)
